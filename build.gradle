@@ -13,6 +13,11 @@ java {
 	}
 }
 
+bootJar {
+	archiveFileName = 'storehouse.jar'
+	mainClass = 'com.example.storehouse.StorehouseApplication'
+}
+
 repositories {
 	mavenCentral()
 }
