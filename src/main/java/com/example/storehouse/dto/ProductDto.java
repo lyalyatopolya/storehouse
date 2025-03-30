@@ -1,24 +1,19 @@
-package com.example.storehouse.model;
+package com.example.storehouse.dto;
 
-import com.example.storehouse.dto.ProductDto;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import org.springframework.data.jpa.domain.AbstractPersistable;
+import com.example.storehouse.model.Product;
 
 import java.util.UUID;
 
-@Entity(name = "storehouse_Product")
-@Table(name = "STOREHOUSE_PRODUCT")
-public class Product extends AbstractPersistable<UUID> {
+public class ProductDto {
 
-    @Column(name = "name_", nullable = false)
+    public ProductDto() {}
+
+    private UUID id;
+
     private String name;
 
-    @Column(name = "count_", nullable = false)
     private long count = 0L;
 
-    @Column(name = "comment_", length = 4000)
     private String comment;
 
     public String getName() {
@@ -45,4 +40,11 @@ public class Product extends AbstractPersistable<UUID> {
         this.comment = comment;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
 }
