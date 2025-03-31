@@ -21,4 +21,10 @@ public class ProductConverter {
         productDto.setCount(product.getCount());
         return productDto;
     }
+
+    public static void setDataFromProductDto(Product product, ProductDto productDto) {
+        product.setName(productDto.getName());
+        product.setComment(productDto.getComment());
+        product.setCount(productDto.getCount());
+    }
 }
