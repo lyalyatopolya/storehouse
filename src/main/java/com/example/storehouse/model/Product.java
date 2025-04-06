@@ -16,7 +16,7 @@ public class Product extends AbstractPersistable<UUID> {
     private String name;
 
     @Column(name = "count_", nullable = false)
-    private long count = 0L;
+    private int count = 0;
 
     @Column(name = "comment_", length = 4000)
     private String comment;
@@ -29,11 +29,11 @@ public class Product extends AbstractPersistable<UUID> {
         this.name = name;
     }
 
-    public long getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(long count) {
+    public void setCount(int count) {
         this.count = count;
     }
 

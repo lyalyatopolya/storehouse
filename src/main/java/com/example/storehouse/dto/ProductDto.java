@@ -1,7 +1,5 @@
 package com.example.storehouse.dto;
 
-import com.example.storehouse.model.Product;
-
 import java.util.UUID;
 
 public class ProductDto {
@@ -12,7 +10,7 @@ public class ProductDto {
 
     private String name;
 
-    private long count = 0L;
+    private int count = 0;
 
     private String comment;
 
@@ -24,11 +22,11 @@ public class ProductDto {
         this.name = name;
     }
 
-    public long getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(long count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
