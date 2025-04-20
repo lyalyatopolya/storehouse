@@ -1,6 +1,6 @@
 package com.example.storehouse.config;
 
-import com.example.storehouse.dto.OrderDto;
+import com.example.storehouse.model.dto.OrderDto;
 import com.example.storehouse.kafka.OrderDtoDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;

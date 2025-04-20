@@ -1,8 +1,8 @@
 package com.example.storehouse.service;
 
-import com.example.storehouse.dto.OrderDto;
+import com.example.storehouse.model.dto.OrderDto;
 import com.example.storehouse.kafka.KafkaOrderProducerService;
-import com.example.storehouse.model.Product;
+import com.example.storehouse.model.entity.Product;
 import com.example.storehouse.model.enums.OrderStatus;
 import com.example.storehouse.repository.ProductRepository;
 import org.springframework.stereotype.Service;

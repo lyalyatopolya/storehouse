@@ -1,6 +1,6 @@
 package com.example.storehouse.kafka;
 
-import com.example.storehouse.dto.OrderDto;
+import com.example.storehouse.model.dto.OrderDto;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 

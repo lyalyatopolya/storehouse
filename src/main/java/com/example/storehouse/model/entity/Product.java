@@ -1,13 +1,18 @@
-package com.example.storehouse.model;
+package com.example.storehouse.model.entity;
 
-import com.example.storehouse.dto.ProductDto;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import java.util.UUID;
 
+@EqualsAndHashCode(callSuper = true)
+@Data
 @Entity(name = "storehouse_Product")
 @Table(name = "STOREHOUSE_PRODUCT")
 public class Product extends AbstractPersistable<UUID> {
@@ -20,29 +25,5 @@ public class Product extends AbstractPersistable<UUID> {
 
     @Column(name = "comment_", length = 4000)
     private String comment;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
 
 }

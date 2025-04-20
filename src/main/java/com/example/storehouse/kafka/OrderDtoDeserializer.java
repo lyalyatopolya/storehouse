@@ -1,7 +1,7 @@
 package com.example.storehouse.kafka;
 
-import com.example.storehouse.dto.OrderDto;
-import com.example.storehouse.dto.ProductDto;
+import com.example.storehouse.model.dto.OrderDto;
+import com.example.storehouse.model.dto.ProductDto;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.errors.SerializationException;

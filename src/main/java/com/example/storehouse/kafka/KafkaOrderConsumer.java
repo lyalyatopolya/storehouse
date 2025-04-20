@@ -1,7 +1,7 @@
 package com.example.storehouse.kafka;
 
-import com.example.storehouse.dto.OrderDto;
-import com.example.storehouse.model.Product;
+import com.example.storehouse.model.dto.OrderDto;
+import com.example.storehouse.model.entity.Product;
 import com.example.storehouse.repository.ProductRepository;
 import com.example.storehouse.service.OrderService;
 import org.springframework.kafka.annotation.KafkaListener;
